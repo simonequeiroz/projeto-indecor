@@ -1,0 +1,111 @@
+:root {
+  --cor-texto: #333;
+  --cor-fundo: #ffffff;
+  --cor-cabecalho: #007BFF;
+  --cor-rodape: #333;
+  --cor-overlay: rgba(0, 0, 0, 0.6);
+  --cor-fundo-imagem: url('img/fundo.jpg');
+  --font-principal: 'Open Sans', sans-serif;
+  --font-titulo: 'Playfair Display', serif;
+  --font-secundaria: 'Lora', serif;
+}
+
+/* Importando fontes */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap');
+
+body {
+  font-family: var(--font-principal);
+  margin: 0;
+  padding: 0;
+  color: var(--cor-texto);
+}
+
+/* Estilo do cabeçalho */
+#header { /* Estilo para o cabeçalho */
+  background-image: url("../img/hrz-5.jpg"); /* Caminho correto da imagem */
+  background-size: cover;  /* A imagem vai cobrir toda a área */
+  background-position: center;  /* Centraliza a imagem */
+  height: 100vh;  /* A altura será 100% da altura da tela */
+  display: flex;  /* Usamos Flexbox para centralizar o conteúdo */
+  flex-direction: column;  /* Alinha o conteúdo na coluna (vertical) */
+  justify-content: center;  /* Centraliza o conteúdo verticalmente */
+  align-items: center;  /* Centraliza o conteúdo horizontalmente */
+  color: #ffffff;  /* Cor do texto */
+  text-align: center;  /* Centraliza o texto */
+  padding: 20px;  /* Um pouco de espaçamento ao redor do texto */
+}
+
+/* Título e descrição */
+#brand {/* Título e descrição */
+  #brand {
+    font-size: 3rem; /* Tamanho maior para o título */
+    font-weight: bold; /* Deixa o título em negrito */
+    margin: 0;  /* Remove o espaço extra ao redor do título */
+    color: #007BFF; /* Cor azul para o título */
+  }
+}
+#event-description {
+  font-size: 1.5rem; /* Tamanho para a descrição */
+  margin-top: 10px;  /* Espaçamento entre o título e a descrição */
+}
+
+.overlay {
+  background: var(--cor-overlay);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-container {
+  background: var(--cor-fundo);
+  color: black;
+  padding: 15px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* Estilos do formulário */
+input, button {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  background: var(--cor-cabecalho);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilizando seções */
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+/* Seção de aprendizado */
+.topicos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.topico {
+  width: 30%;
+}
+
+/* Seção de ambientes */
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Rodapé */
+footer {
+  background: var(--cor-rodape);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
