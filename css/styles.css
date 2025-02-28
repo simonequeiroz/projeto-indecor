@@ -6,10 +6,10 @@ body {
 
 /* Estilos da seção Hero (principal) */
 .hero {
-  background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url('../img/hrz-5.jpg'); /* Define a imagem de fundo com gradiente radial */
+  background-image: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('../img/hrz-5.jpg'); /* Corrigido erro no segundo rgba */
   background-size: cover; /* Garante que a imagem cubra todo o espaço */
   background-position: center; /* Centraliza a imagem */
-  height: 100vh; /* Define a altura para ocupar a tela inteira */
+  height: 95vh; /* Define a altura para ocupar a tela inteira */
   display: flex; /* Usa Flexbox para alinhar conteúdo */
   align-items: center; /* Alinha verticalmente */
   justify-content: center; /* Alinha horizontalmente */
@@ -19,52 +19,75 @@ body {
 
 .hero-content {
   display: flex; /* Usa Flexbox */
-  width: 80%; /* Define largura para 80% da tela */
+  width: 70%; /* Define largura */
   max-width: 1200px; /* Define largura máxima */
   justify-content: space-between; /* Distribui espaço entre elementos */
   align-items: center; /* Alinha verticalmente */
+  margin: 0 auto;
+  padding: 20px; /* Adiciona preenchimento interno */
+}
+
+.azul {
+  color: #007bff;
+  font-weight: bold; /* Define negrito */
 }
 
 .hero-text {
-  width: 45%; /* Define largura para 45% do conteúdo Hero */
+  width: 45%; /* Define largura */
   text-align: left; /* Alinha texto à esquerda */
-  padding-left: 20px; /* Adiciona espaçamento à esquerda */
+  padding-left: 10px; /* Adiciona espaçamento à esquerda */
 }
 
 .hero-title {
-  color: #007bff; /* Define a cor do título Hero */
+  color: #007bff; /* Define a cor do título */
 }
 
 .hero-form {
-  width: 38%; /* Define largura para 38% do conteúdo Hero */
-  background-color: #c0c0c0; /* Define a cor de fundo do formulário */
-  color: #000000; /* Define a cor do texto do formulário */
+  width: 38%; /* Define largura */
+  background-color: #c0c0c0; /* Define a cor de fundo */
+  color: #000000; /* Define a cor do texto */
   padding: 25px; /* Adiciona preenchimento interno */
-  border-radius: 0px; /* Adiciona bordas arredondadas */
+  border-radius: 4px; /* Bordas arredondadas */
   box-sizing: border-box; /* Garante que padding não afete a largura total */
   align-self: center; /* Centraliza verticalmente */
 }
 
 .hero-form h2 {
-  margin-bottom: 20px; /* Define margem inferior do título do formulário */
+  margin-bottom: 20px; /* Define margem inferior */
+  color: #333; /* Define a cor do título */
 }
 
 .form-row {
   display: flex; /* Usa Flexbox */
   flex-direction: column; /* Alinha elementos verticalmente */
-  margin-bottom: 25px; /* Define margem inferior das linhas do formulário */
+  margin-bottom: 25px; /* Define margem inferior */
 }
 
 .form-row label {
-  margin-bottom: 15px; /* Define margem inferior dos rótulos */
+  margin-bottom: 10px; /* Define margem inferior */
+  color: #666; /* Define a cor */
 }
 
-.hero-form input, {
-.hero-form select,
-.hero-form button 
-  width: 100%; /* Define largura para 100% da linha */
-  padding: 1
-} 
+.hero-form input,
+.hero-form select {
+  width: 100%; /* Define largura total */
+  padding: 10px;
+  background-color: #f1f1f1; /* Cor de fundo */
+  border: none;
+}
+
+.hero-form button {
+  background-color: #007bff; /* Cor azul */
+  color: #fff;
+  cursor: pointer;
+  padding: 15px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px; /* Ajustado para melhor espaçamento */
+  width: 100%; /* Para manter o alinhamento */
+}
+
 .submit-btn {
   background-color: #007bff; /* Cor azul */
   color: #fff;
@@ -73,9 +96,9 @@ body {
   font-size: 16px;
   border: none;
   border-radius: 4px;
-  margin-top: 20px; /* Adicionado para espaçamento */
+  margin-top: 20px; /* Ajustado para melhor espaçamento */
 }
-.
+
 .learn {
   text-align: center;
   padding: 40px 20px;
@@ -97,15 +120,20 @@ body {
 }
 
 .learn-item img {
-  width: 250px; /* Tamanho fixo */
-  height: 250px; /* Tamanho fixo */
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
-  object-fit: cover; /* Garante que a imagem cubra o círculo sem distorção */
+  object-fit: cover;
   margin-bottom: 10px;
 }
 
 .learn-item p {
-  width: 250px; /* Garante que o texto tenha a mesma largura da imagem */
-  text-align: center; /* Centraliza o texto */
-  margin: 10px 0; /* Adiciona margem vertical */
+  width: 300px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.learn-item a {
+  color: #007bff;
+  text-decoration: none;
 }
