@@ -1,4 +1,18 @@
 {
   "workbench.statusBar.visible": true,
-  "git.enabled": true
-}
+  "git.enabled": true,
+  "workbench.statusBar.visible": true,
+  "git.enabled": true,
+  "workbench.editor.enablePreview": false,
+  "workbench.colorTheme": "One Dark Pro",
+  "editor.fontSize": 18,
+  "editor.fontFamily": "Fira Code",
+  "editor.lineHeight": 24,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 80,
+  "editor.minimap.enabled": true,
+  "editor.minimap.showSlider": "always",
+  "editor.suggestOnTriggerCharacters": true,
+  }
+  
