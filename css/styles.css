@@ -6,97 +6,85 @@ body {
 
 /* Estilos da seção Hero (principal) */
 .hero {
-  background-image: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('../img/hrz-5.jpg'); /* Corrigido erro no segundo rgba */
-  background-size: cover; /* Garante que a imagem cubra todo o espaço */
-  background-position: center; /* Centraliza a imagem */
-  height: 95vh; /* Define a altura para ocupar a tela inteira */
-  display: flex; /* Usa Flexbox para alinhar conteúdo */
-  align-items: center; /* Alinha verticalmente */
-  justify-content: center; /* Alinha horizontalmente */
-  color: #fff; /* Define a cor do texto para branco */
-  background-repeat: no-repeat; /* Impede repetição da imagem de fundo */
+  background-image: url('/img/hrz-5.jpg'); /* Substitua pelo caminho da sua imagem */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 100px 20px;
 }
 
 .hero-content {
-  display: flex; /* Usa Flexbox */
-  width: 70%; /* Define largura */
-  max-width: 1200px; /* Define largura máxima */
-  justify-content: space-between; /* Distribui espaço entre elementos */
-  align-items: center; /* Alinha verticalmente */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 20px; /* Adiciona preenchimento interno */
 }
-
 .azul {
-  color: #007bff;
-  font-weight: bold; /* Define negrito */
+ color: #007bff;
 }
-
 .hero-text {
-  width: 45%; /* Define largura */
-  text-align: left; /* Alinha texto à esquerda */
-  padding-left: 10px; /* Adiciona espaçamento à esquerda */
+  text-align: left;
 }
 
-.hero-title {
-  color: #007bff; /* Define a cor do título */
+.hero-text h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero-text span {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2em;
 }
 
 .hero-form {
-  width: 38%; /* Define largura */
-  background-color: #c0c0c0; /* Define a cor de fundo */
-  color: #000000; /* Define a cor do texto */
-  padding: 25px; /* Adiciona preenchimento interno */
-  border-radius: 4px; /* Bordas arredondadas */
-  box-sizing: border-box; /* Garante que padding não afete a largura total */
-  align-self: center; /* Centraliza verticalmente */
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  padding: 30px;
+  border-radius: 8px;
+  width: 400px;
 }
 
 .hero-form h2 {
-  margin-bottom: 20px; /* Define margem inferior */
-  color: #333; /* Define a cor do título */
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .form-row {
-  display: flex; /* Usa Flexbox */
-  flex-direction: column; /* Alinha elementos verticalmente */
-  margin-bottom: 25px; /* Define margem inferior */
+  margin-bottom: 15px;
 }
 
 .form-row label {
-  margin-bottom: 10px; /* Define margem inferior */
-  color: #666; /* Define a cor */
+  display: block;
+  margin-bottom: 5px;
 }
 
-.hero-form input,
-.hero-form select {
-  width: 100%; /* Define largura total */
+form input,
+form select {
+  width: 100%;
   padding: 10px;
-  background-color: #f1f1f1; /* Cor de fundo */
-  border: none;
-}
-
-.hero-form button {
-  background-color: #007bff; /* Cor azul */
-  color: #fff;
-  cursor: pointer;
-  padding: 15px 20px;
-  font-size: 16px;
-  border: none;
+  border: 1px solid #ccc;
   border-radius: 4px;
-  margin-top: 10px; /* Ajustado para melhor espaçamento */
-  width: 100%; /* Para manter o alinhamento */
 }
 
 .submit-btn {
-  background-color: #007bff; /* Cor azul */
+  background-color: #007bff;
   color: #fff;
-  cursor: pointer;
   padding: 12px 20px;
-  font-size: 16px;
   border: none;
   border-radius: 4px;
-  margin-top: 20px; /* Ajustado para melhor espaçamento */
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.1em;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
 }
 
 .learn {
@@ -105,8 +93,8 @@ body {
 }
 
 .learn-title-bg {
-  background-color: #f0f0f0;
-  padding: 30px 20px;
+  background-color: #d8d4d4;
+  padding: 50px 30px;
   text-align: center;
 }
 
@@ -148,20 +136,20 @@ body {
   background-size: cover;
   background-position: center;
   color: #fff;
-  padding: 50px 20px;
+  padding: 20px;
   text-align: center;
 }
 
 .highlight-content {
-  width: 22%;
+  width: 45%;
   margin: 0 auto;
   display: flex; /* Adiciona flexbox */
   justify-content: space-between; /* Alinha os textos em lados opostos */
-  align-items: center; /* Alinha os itens verticalmente ao centro */
+ 
 }
 
 .highlight-info {
-  text-align: left; /* Alinha o texto à esquerda */
+  text-align: center; /* Alinha o texto à esquerda */
   width: 80%;/* Define a largura para ocupar um lado */
 }
 
@@ -171,11 +159,15 @@ body {
 }
 .highlight-info p {
   margin: 0;
-  line-height: 1.4;
+  line-height: 1.8;
+  font-weight: bold;
 }
 .highlight-text {
   text-align: left; /* Alinha o texto à esquerda */
-  width: 65%; /* Define a largura para ocupar o outro lado */
+  width: 50%; /* Define a largura para ocupar o outro lado */
+  margin-left: 50px; /* Adiciona espaço à esquerda */
+  font-weight: bold;
+  font-size: 1.2em;
 }
 .highlight-text h2 {
   color: #007bff;
@@ -187,99 +179,90 @@ body {
 }
 /* Estilos da Seção "Conheça os ambientes" */
 .rooms {
-  padding: 50px 20px;
-  text-align: center;
+  padding: 50px;
 }
 
-.rooms-title h2 {
-  font-size: 2em;
-  margin-bottom: 30px;
-}
-
-.rooms-content {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.rooms-block {
+.rooms-container {
   display: flex;
   flex-direction: column;
+  }
+
+.rooms-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
   align-items: center;
 }
 
-.rooms-block img {
-  max-width: 250px;
+.rooms-row.images-row {
+  justify-content: space-around;
+}
+
+.room-image {
+  width: 50%;
+  
+}
+
+.room-image img {
+  width: 90%;
   height: auto;
-  object-fit: cover;
-  margin-bottom: 20px;
 }
 
-.rooms-details,
-.rooms-objects {
-  text-align: left;
-  width: 100%;
+.room-text {
+  width: 35%;
 }
 
-.rooms-details-title h2,
-.rooms-objects-title h2 {
-  font-size: 1.5em;
-  margin-bottom: 15px;
+.room-text h2 {
+  font-size: 45px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.rooms-details-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinha os itens à esquerda */
+  text-align: left; /* Alinha o texto à direita */
 }
 
-.rooms-details-list,
 .rooms-objects-list {
-  list-style: disc;
+  list-style-type: disc;
   padding-left: 20px;
+  
 }
 
-/* Ajustes para alinhar os elementos */
-.rooms-content > div:nth-child(3),
-.rooms-content > div:nth-child(4) {
-  grid-column: 1 / 3;
+.room-text.details {
+  align-self: flex-start;
 }
-
-.rooms-content > div:last-child {
-  grid-column: 2 / 4;
-}
-
-/* Ajustes para alinhar as imagens com o texto */
-.rooms-content > div:nth-child(3),
-.rooms-content > div:nth-child(4) {
-  align-self: start;
-}
-
-/* Estilos da Seção "Gostou? Inscreva-se" */
+/* Seção Subscribe */
 .subscribe {
-  padding: 50px 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/img/hrz-6.jpg);
+  background-size: cover;
+  background-position: 100% 50%; /* Move a imagem um pouco mais para cima, ajustando a posição */
+  padding: 100px;
   text-align: center;
-}
-
-.subscribe h2 {
-  font-size: 2em;
-  margin-bottom: 30px;
-}
-
-.subscribe-button {
-  background-color: #007bff;
+  font-family: "Poppens" sans-serif;
   color: #fff;
-  padding: 15px 30px;
+
+ }
+ .subscribe button {
+  background: #007bff;
+  color: white;
+  padding: 10px 100px;
   border: none;
-  border-radius: 5px;
-  font-size: 1.2em;
+  border-radius: 0px;
+  font-size: 1rem;
   cursor: pointer;
+  text-transform: uppercase;
+  
+ }
+.subscribe button:hover {
+  background: #003d82;
 }
-
-/* Estilos do Rodapé */
-.footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
+/* Footer */
+footer {
+  background-color: white;
+  color: #bebbbb;
   text-align: center;
-}
-
-.footer p {
-  margin: 5px 0;
+  padding: 50px;
+  margin-top: 2%;
 }
