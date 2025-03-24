@@ -5,68 +5,106 @@ body {
 }
 
 /* Estilos da seção Hero (principal) */
+/* Estilo para a seção hero */
 .hero {
-  background-image: url('/img/hrz-5.jpg'); /* Substitua pelo caminho da sua imagem */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/img/hrz-5.jpg');
   background-size: cover;
   background-position: center;
   color: #fff;
-  padding: 100px 20px;
+  height: 90vh;
+  /* Ocupa toda a altura da tela */
+  display: flex;
+  align-items: center;
+  /* Centraliza verticalmente */
+  justify-content: center;
+  /* Centraliza horizontalmente */
+  padding: 0 10px;
 }
 
+/* Conteúdo da seção hero */
 .hero-content {
   display: flex;
+  /* Alinha os elementos lado a lado */
   justify-content: space-between;
+  /* Espaça o texto e o formulário */
   align-items: center;
+  /* Centraliza verticalmente */
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
+  /* Centraliza o conteúdo horizontalmente */
 }
-.azul {
- color: #007bff;
-}
+
+/* Texto à esquerda */
 .hero-text {
+  width: 30%;
+  /* Divide o espaço igualmente */
   text-align: left;
 }
 
 .hero-text h1 {
-  font-size: 3em;
-  margin-bottom: 10px;
+  font-size: 4rem;
+  /* Aumenta o tamanho do título */
+  margin-bottom: 20px;
+  color: #007bff;
+  /* Azul vibrante */
 }
 
 .hero-text span {
-  font-size: 1.5em;
-  margin-bottom: 20px;
+  font-size: 2rem;
+  /* Subtítulo destacado */
+  margin-bottom: 45px;
+  display: block;
 }
 
 .hero-text p {
-  font-size: 1.2em;
+  font-size: 1.2rem;
+  /* Ajusta os parágrafos */
+  line-height: 1.6;
+  /* Espaçamento entre as linhas */
+}
+p.azul {
+  color: #007bff;
 }
 
+/* Formulário à direita */
 .hero-form {
   background-color: rgba(255, 255, 255, 0.9);
-  color: #333;
+  /* Fundo branco com transparência */
   padding: 30px;
+  /* Adiciona espaço interno */
   border-radius: 8px;
+  /* Bordas arredondadas */
   width: 400px;
+  /* Define a largura fixa */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Adiciona sombra suave */
 }
 
 .hero-form h2 {
-  font-size: 1.8em;
+  font-size: 1.5rem;
+  color: #333;
   margin-bottom: 20px;
-  text-align: center;
+  text-align: left;
+  /* Centraliza o texto do título */
 }
 
 .form-row {
   margin-bottom: 15px;
+  color: #333;
+  /* Espaçamento entre os campos */
 }
 
 .form-row label {
   display: block;
   margin-bottom: 5px;
+  /* Espaçamento entre o rótulo e o campo */
 }
 
 form input,
 form select {
   width: 100%;
+  /* O campo ocupa toda a largura */
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -80,12 +118,28 @@ form select {
   border-radius: 4px;
   cursor: pointer;
   width: 100%;
+  /* Botão ocupa toda a largura do formulário */
   font-size: 1.1em;
+  text-transform: uppercase;
 }
 
 .submit-btn:hover {
   background-color: #0056b3;
+  /* Efeito ao passar o mouse */
 }
+
+  .hero-text {
+    width: 100%;
+    /* Texto ocupa toda a largura */
+    margin-bottom: 20px;
+    /* Espaçamento entre o texto e o formulário */
+  }
+
+  .hero-form {
+    width: 95%;
+    /* Formulário ocupa quase toda a largura */
+  }
+
 
 .learn {
   text-align: center;
@@ -124,58 +178,65 @@ form select {
   margin-top: 10px;
 }
 
-/* Estilos Responsivos */
-@media (max-width: 768px) {
-  .learn-items {
-      flex-direction: column;
-      align-items: center;
-  }
-}
 .highlight {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/img/hrz-1.jpg);
   background-size: cover;
   background-position: center;
   color: #fff;
-  padding: 20px;
+  padding: 90px;
   text-align: center;
 }
 
 .highlight-content {
-  width: 45%;
-  margin: 0 auto;
-  display: flex; /* Adiciona flexbox */
-  justify-content: space-between; /* Alinha os textos em lados opostos */
- 
+  display: flex;
+  /* Cria um layout flexível */
+  justify-content: space-between;
+  /* Espaça os elementos nos extremos */
+  align-items: center;
+  /* Centraliza os elementos verticalmente */
+  text-align: left;
+  /* Garante que o texto seja alinhado à esquerda */
+  width: 100%;
+  /* Ocupa toda a largura disponível */
 }
 
 .highlight-info {
-  text-align: center; /* Alinha o texto à esquerda */
-  width: 80%;/* Define a largura para ocupar um lado */
+  width: 75%;
+  /* Ajusta a largura da seção de informações */
+  text-align: center;
+  /* Centraliza os textos internos */
 }
 
 .highlight-info i {
   font-size: 2em;
-  margin-right: 10px;
-}
-.highlight-info p {
-  margin: 0;
-  line-height: 1.8;
-  font-weight: bold;
-}
-.highlight-text {
-  text-align: left; /* Alinha o texto à esquerda */
-  width: 50%; /* Define a largura para ocupar o outro lado */
-  margin-left: 50px; /* Adiciona espaço à esquerda */
-  font-weight: bold;
-  font-size: 1.2em;
-}
-.highlight-text h2 {
   color: #007bff;
-  margin-bottom: 10px;
+  /* Adiciona destaque ao ícone */
+  margin-right: 10px;
+  /* Espaço entre o ícone e o texto */
+}
+
+.highlight-info p {
+  font-weight: bold;
+  line-height: 1.8;
+}
+
+.highlight-text {
+  width: 55%;
+  text-align: left;
+  padding: 30px;
+}
+
+.highlight-text h2 {
+  font-size: 2em;
+  /* Ajusta o tamanho do título */
+  color: #007bff;
+  /* Azul para destacar o título */
+  margin-bottom: 15px;
 }
 
 .highlight-text p {
-  line-height: 1.6;
+  margin-top: 35px;
+  line-height: 1.5;
 }
 /* Estilos da Seção "Conheça os ambientes" */
 .rooms {
@@ -265,4 +326,35 @@ footer {
   text-align: center;
   padding: 50px;
   margin-top: 2%;
+}
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-text,
+  .hero-form {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .learn-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .learn-item {
+    width: %;
+    margin-bottom: 20px;
+  }
+
+  .learn-item img {
+    width: 2
+  }
 }
