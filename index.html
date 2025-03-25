@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>InDecor</title>
+    <title>InDecor - Evento de Decoração e Design de Interiores</title>
+    <meta name="description"
+        content="Participe do evento que vai revolucionar sua criatividade em decoração e design de interiores">
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,10 +19,9 @@
         rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
 </head>
-
 <body>
-    <!-- Seção Principal - Banner do evento -->
-    <section class="hero">
+    <!-- Cabeçalho/Banner do evento -->
+    <header class="hero">
         <div class="hero-content">
             <div class="hero-text">
                 <h1 class="azul">InDecor</h1>
@@ -30,20 +34,20 @@
                 <form>
                     <div class="form-row">
                         <label for="nome">Nome</label>
-                        <input type="text" id="nome" placeholder="Digite seu nome" />
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required />
                     </div>
                     <div class="form-row">
                         <label for="email">E-mail</label>
-                        <input type="email" id="email" placeholder="Digite seu melhor e-mail" />
+                        <input type="email" id="email" name="email" placeholder="Digite seu melhor e-mail" required />
                     </div>
                     <div class="form-row">
                         <label for="telefone">Telefone</label>
-                        <input type="tel" id="telefone" placeholder="Número de Whatsapp" />
+                        <input type="tel" id="telefone" name="telefone" placeholder="Número de Whatsapp" required />
                     </div>
                     <div class="form-row">
                         <label for="interesse">Principal Interesse</label>
-                        <select id="interesse">
-                            <option value="">Selecione</option>
+                        <select id="interesse" name="interesse" required>
+                            <option value="" disabled selected>Selecione</option>
                             <option value="design">Design de Interiores</option>
                             <option value="arquitetura">Arquitetura</option>
                             <option value="decoracao">Decoração</option>
@@ -53,81 +57,84 @@
                 </form>
             </div>
         </div>
-    </section>
+    </header>
 
-    <!-- Corrigindo o erro na tag <section> -->
-    <section class="learn">
+    <!-- Seção O que você vai aprender -->
+    <section class="learn" aria-labelledby="aprendizado">
         <div class="learn-title-bg">
-            <h2>O que você vai aprender:</h2>
+            <h2 id="aprendizado">O que você vai aprender:</h2>
         </div>
         <div class="learn-items">
             <div class="learn-item">
-                <img src="/img/sqr-1.jpg" alt="Aprender 1" />
-                <p>Alguma coisa muito legal, que vai fazer a diferença na vida do participante</p>
+                <img src="img/sqr-1.jpg" alt="Workshop de design de interiores" />
+                <p>Técnicas avançadas de composição visual para criar ambientes harmoniosos</p>
             </div>
             <div class="learn-item">
-                <img src="/img/sqr-2.jpg" alt="Aprender 2" />
-                <p>Alguma coisa muito legal, que vai fazer a diferença na vida do participante</p>
+                <img src="img/sqr-2.jpg" alt="Demonstração de combinação de cores" />
+                <p>Como combinar cores e texturas para diferentes estilos decorativos</p>
             </div>
             <div class="learn-item">
-                <img src="/img/sqr-3.jpg" alt="Aprender 3" />
-                <p>Alguma coisa muito legal, que vai fazer a diferença na vida do participante</p>
+                <img src="img/sqr-3.jpg" alt="Otimização de espaços pequenos" />
+                <p>Estratégias para otimizar espaços pequenos sem perder estilo e funcionalidade</p>
             </div>
         </div>
     </section>
 
-    <section class="highlight">
+    <!-- Seção Local do evento -->
+    <section class="highlight" aria-labelledby="local-evento">
         <div class="highlight-content">
             <div class="highlight-info">
-                <i class="bi bi-geo-alt"></i>
+                <i class="bi bi-geo-alt" aria-hidden="true"></i>
                 <p>Rua do evento, 1333 - Centro</p>
-                <p>Cidade - Estado</p>
+                <p>São Paulo - SP</p>
             </div>
             <div class="highlight-text">
-                <h2>LOCAL DE DESTAQUE</h2>
-                <p>O evento será realizado em um local prestigiado pelos amantes de Design de Interiores, onde teremos
-                    exemplos de vários ambientes, tanto internos como externos.</p>
+                <h2 id="local-evento">LOCAL DE DESTAQUE</h2>
+                <p>O evento será realizado no Centro de Convenções Villa Decor, espaço prestigiado pelos amantes de
+                    Design de Interiores, onde teremos exemplos de vários ambientes, tanto internos como externos, para
+                    inspirar sua criatividade.</p>
             </div>
         </div>
     </section>
 
-    <section class="rooms">
+    <!-- Seção Ambientes e Decoração -->
+    <section class="rooms" aria-labelledby="ambientes">
         <div class="rooms-container">
             <div class="rooms-row">
                 <div class="room-image">
-                    <img src="/img/hrz-3.jpg" alt="Ambiente 1">
+                    <img src="img/hrz-3.jpg" alt="Sala de estar decorada em estilo moderno">
                 </div>
                 <div class="room-text">
-                    <h2>Conheça os ambientes que você vai aprender a decorar</h2>
+                    <h2 id="ambientes">Conheça os ambientes que você vai aprender a decorar</h2>
                 </div>
             </div>
             <div class="rooms-row">
                 <div class="room-text details">
                     <h2>Detalhes</h2>
                     <ul class="rooms-details-list">
-                        <li>Posicionamento</li>
-                        <li>Aproveitamento de espaço</li>
-                        <li>Combinação de cores</li>
-                        <li>Organização</li>
+                        <li>Posicionamento estratégico de móveis</li>
+                        <li>Aproveitamento inteligente de espaço</li>
+                        <li>Combinação de cores e padrões</li>
+                        <li>Organização funcional</li>
                         <li><b>E muito mais...</b></li>
                     </ul>
                 </div>
                 <div class="room-image">
-                    <img src="/img/hrz-4.jpg" alt="Ambiente 2">
+                    <img src="img/hrz-4.jpg" alt="Ambiente de cozinha integrada decorada">
                 </div>
             </div>
             <div class="rooms-row">
                 <div class="room-image">
-                    <img src="/img/hrz-5.jpg" alt="Ambiente 3">
+                    <img src="img/hrz-5.jpg" alt="Quarto decorado com objetos de design">
                 </div>
                 <div class="room-text objects">
                     <h2>Objetos</h2>
                     <ul class="rooms-objects-list">
-                        <li>Cadeiras</li>
-                        <li>Mesas</li>
-                        <li>Espelhos</li>
-                        <li>Plantas</li>
-                        <li>Cortinas</li>
+                        <li>Cadeiras de designer</li>
+                        <li>Mesas multifuncionais</li>
+                        <li>Espelhos decorativos</li>
+                        <li>Plantas e arranjos</li>
+                        <li>Cortinas e persianas</li>
                         <li><b>E muito mais...</b></li>
                     </ul>
                 </div>
@@ -135,18 +142,26 @@
         </div>
     </section>
 
+    <!-- Seção de Inscrição -->
     <section class="subscribe">
         <h2>Gostou? Então se inscreva:</h2>
-        <button>Solicitar inscrição</button>
+        <button onclick="document.querySelector('.hero-form form').scrollIntoView({behavior: 'smooth'})">SOLICITAR
+            INSCRIÇÃO</button>
     </section>
 
+    <!-- Rodapé -->
     <footer>
         <div class="footer-content">
             <h1>InDecor</h1>
             <p>A evolução da decoração de interiores</p>
             <div class="contact-info">
                 <p>Entre em contato: <a href="mailto:oi@indecor.com.br">oi@indecor.com.br</a></p>
-                <p>Ou pelo telefone: <a href="tel:55999909999">(55)99990-9999</a></p>
+                <p>Ou pelo telefone: <a href="tel:5511999999999">(11) 99999-9999</a></p>
+            </div>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
             </div>
         </div>
     </footer>
