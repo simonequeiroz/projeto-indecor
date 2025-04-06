@@ -4,7 +4,7 @@
   "workbench.statusBar.visible": true,
   "git.enabled": true,
   "workbench.editor.enablePreview": false,
-  "workbench.colorTheme": "One Dark Pro",
+  "workbench.colorTheme": "Monokai",
   "editor.fontSize": 18,
   "editor.fontFamily": "Fira Code",
   "editor.lineHeight": 24,

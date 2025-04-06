@@ -3,7 +3,17 @@ body {
   margin: 0; /* Remove a margem padrão do corpo */
   padding: 0; /* Remove o preenchimento padrão do corpo */
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
 /* Estilos da seção Hero (principal) */
 /* Estilo para a seção hero */
 .hero {
@@ -14,55 +24,59 @@ body {
   height: 90vh;
   /* Ocupa toda a altura da tela */
   display: flex;
-  align-items: center;
+  align-items: center; 
   /* Centraliza verticalmente */
   justify-content: center;
   /* Centraliza horizontalmente */
-  padding: 0 10px;
+
 }
 
 /* Conteúdo da seção hero */
 .hero-content {
   display: flex;
-  /* Alinha os elementos lado a lado */
   justify-content: space-between;
-  /* Espaça o texto e o formulário */
-  align-items: center;
-  /* Centraliza verticalmente */
-  max-width: 1200px;
+  align-items: flex-start;
+  /* ou center, se quiser */
   width: 100%;
-  margin: 0 auto;
-  /* Centraliza o conteúdo horizontalmente */
+  padding-left: 0;
+  padding-right: 340px;
+  /* ou o espaço que quiser à direita */
 }
 
 /* Texto à esquerda */
 .hero-text {
-  width: 30%;
-  /* Divide o espaço igualmente */
+  max-width: 700px;
+  margin-left: 0px;
   text-align: left;
+  padding-left: 250px;
+  /* Aumente esse valor se quiser colar mais na borda */
 }
 
 .hero-text h1 {
   font-size: 4rem;
   /* Aumenta o tamanho do título */
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   color: #007bff;
   /* Azul vibrante */
 }
 
-.hero-text span {
-  font-size: 2rem;
-  /* Subtítulo destacado */
-  margin-bottom: 45px;
+.hero-content span {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: white;
   display: block;
-}
+  text-align: left;
+  /* ou center, se quiser */
 
+}
 .hero-text p {
   font-size: 1.2rem;
-  /* Ajusta os parágrafos */
-  line-height: 1.6;
-  /* Espaçamento entre as linhas */
+  font-weight: bold;
+  margin: 0;
+  line-height: 2;
 }
+
 p.azul {
   color: #007bff;
 }
@@ -70,64 +84,57 @@ p.azul {
 /* Formulário à direita */
 .hero-form {
   background-color: rgba(255, 255, 255, 0.9);
-  /* Fundo branco com transparência */
   padding: 30px;
-  /* Adiciona espaço interno */
   border-radius: 8px;
-  /* Bordas arredondadas */
-  width: 400px;
-  /* Define a largura fixa */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  /* Adiciona sombra suave */
+  max-width: 400px;
+  width: 100%;
+   font-family: 'Montserrat', sans-serif;
 }
 
 .hero-form h2 {
-  font-size: 1.5rem;
-  color: #333;
+  font-size: 1.2rem;
   margin-bottom: 20px;
-  text-align: left;
-  /* Centraliza o texto do título */
+  color: #1b1b1b;
 }
 
 .form-row {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 15px;
-  color: #333;
-  /* Espaçamento entre os campos */
 }
 
 .form-row label {
-  display: block;
   margin-bottom: 5px;
-  /* Espaçamento entre o rótulo e o campo */
+  font-weight: bold;
+  color: #333;
 }
 
-form input,
-form select {
-  width: 100%;
-  /* O campo ocupa toda a largura */
+.form-row input,
+.form-row select {
   padding: 10px;
+  font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .submit-btn {
-  background-color: #007bff;
-  color: #fff;
-  padding: 12px 20px;
+  background-color: #00aee0;
+  color: white;
+  font-weight: bold;
+  padding: 12px;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
   width: 100%;
-  /* Botão ocupa toda a largura do formulário */
-  font-size: 1.1em;
-  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
 }
 
 .submit-btn:hover {
-  background-color: #0056b3;
-  /* Efeito ao passar o mouse */
+  background-color: #008fbe;
 }
-
   .hero-text {
     width: 100%;
     /* Texto ocupa toda a largura */
@@ -147,7 +154,7 @@ form select {
 }
 
 .learn-title-bg {
-  background-color: #d8d4d4;
+  background-color: #c9c5c5;
   padding: 50px 30px;
   text-align: center;
 }
@@ -270,22 +277,23 @@ form select {
 }
 
 .room-text {
-  width: 35%;
+  width: 45%;
 }
 
 .room-text h2 {
   font-size: 45px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   font-weight: bold;
 }
 .rooms-details-list {
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* Alinha os itens à esquerda */
-  text-align: left; /* Alinha o texto à direita */
+  text-align: right; /* Alinha o texto à direita */
 }
 
 .rooms-objects-list {
+  margin-bottom: 250px;
   list-style-type: disc;
   padding-left: 20px;
   
@@ -308,7 +316,7 @@ form select {
  .subscribe button {
   background: #007bff;
   color: white;
-  padding: 10px 100px;
+  padding: 10px 80px;
   border: none;
   border-radius: 0px;
   font-size: 1rem;
@@ -327,34 +335,33 @@ footer {
   padding: 50px;
   margin-top: 2%;
 }
-/* Estilos Responsivos */
+/* --- RESPONSIVO --- */
 @media (max-width: 768px) {
-  .hero-content {
-    flex-direction: column;
-    align-items: center;
+  .hero {
+    height: auto;
+    padding: 30px 15px;
   }
 
-  .hero-text,
-  .hero-form {
-    width: 100%;
-    text-align: center;
+  .hero-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 0;
+  }
+
+  .hero-text {
+    max-width: 100%;
   }
 
   .hero-text h1 {
     font-size: 2.5rem;
   }
 
-  .learn-items {
-    flex-direction: column;
-    align-items: center;
+  .hero-content span {
+    font-size: 1.5rem;
   }
 
-  .learn-item {
-    width: %;
-    margin-bottom: 20px;
-  }
-
-  .learn-item img {
-    width: 2
+  .hero-text p {
+    font-size: 1rem;
   }
 }
